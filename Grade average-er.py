@@ -1,4 +1,4 @@
-### By Pedro Lucero, 2022
+### By Pedro Lucero, 2022 ###
 # A "grade calculator" that shows you a school class' final grade. 
 # Made this since most school websites to check grades don't work properly 
 # if you don't have at least one grade in each section, showing you a lower grade than you have. 
