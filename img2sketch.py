@@ -1,19 +1,22 @@
+### By Pedro Lucero, 2022 ###
+# So, in some projects I saw myself in the need to show "drawings" or "sketches" 
+# of devices and whatnot. I coded this to avoid that. You put in an image and it'll
+# apply the canny filter on it, then a bit_not function. 
+# It'll look "good enough" to pass as an actual sketch
+###
+### Hi! I sketch things, just gimme an image with clearly defined lines and tweak the canny thresholds! ###
+
 import cv2 as cv
 import numpy as np
 
 
-def nothing(x):
+def nothing(x): # Needed because of OpenCV reasons
     pass
 
+img_input = input("Enter img (FULL PATH!)\n>>>")
+img = cv.imread(img_input)
 
-# Bro just add a copy of the pic in the same directory...
-
-img = cv.imread("C://Users//Pedro//Documents//HUBIOS designs//Images//Thermal Cycler//edited.png")
-
-#img_input = input("Enter img (FULL PATH!)\n>>>")
-#img = cv.imread(img_input)
-
-scale = 80
+scale = 80 # Arbitrary default scale 
 
 cv.namedWindow("Trackbar")
 cv.createTrackbar("Thresh Hi", "Trackbar", 52, 255, nothing)
