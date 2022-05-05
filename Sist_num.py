@@ -1,5 +1,8 @@
-### BS Code to solve boring class stuff ###
-#Cuz I'm extra ;)#
+### By Pedro Lucero, 2022 ###
+### Small Code to translate between numeric systems ###
+# Can do binary, octal, decimal and hexadecimal
+# Format is: num,current_system,desired_system
+# Example: 10,BIN,DEC should return "2"
 
 hex_values = {"A":"10", "B":"11", "C":"12", "D":"13", "E":"14", "F":"15"}
 bases = {"BIN":2, "OCT":8, "DEC":10, "HEX":16}
