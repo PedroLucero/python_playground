@@ -1,3 +1,11 @@
+### By Pedro Lucero, 2022
+# A "grade calculator" that shows you a school class' final grade. 
+# Made this since most school websites to check grades don't work properly 
+# if you don't have at least one grade in each section, showing you a lower grade than you have. 
+
+# I'll make this into a webpage later.
+###
+
 import tkinter as tk
 from tkinter import ttk
 
@@ -9,7 +17,7 @@ class GradeCalculator(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
 
-        #tk.Tk.iconbitmap(self, default="ImagioDimaggio.ico")
+        # I've the icon in my PC so you'll have to bear with the tk feather
         tk.Tk.wm_title(self, "Grade Calculator")
 
         container = tk.Frame(self)
